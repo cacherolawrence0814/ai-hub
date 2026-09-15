@@ -20,3 +20,30 @@ searchInput.addEventListener('keyup', function () {
     });
 
 });
+
+const categoryButtons = document.querySelectorAll(".category-btn");
+
+categoryButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const filter = button.dataset.filter;
+
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach(card => {
+
+            if (
+                filter === "all" ||
+                card.dataset.category === filter
+            ) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
