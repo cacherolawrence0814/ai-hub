@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+   *box-sizing:border-box;
+}
+
+body{
+  * font-family:Arial,sans-serif;
+   *background:#111827;
+   *color:white;
+}
+
+header{
+    text-a*ign:center;
+    padding:60px 20px;*    background*linear-gradient(135deg,#2563eb,#7c*aed);
+}
+
+.btn{
+    display*inline-block;
+    padding:10px 15p*;
+    background*#2563eb;
+    color:white;
+    bord*r-radius:8px;
+    text-decoration:*one;
+    margin-top:10px;
+}
+
+.btn:*over{
+    background:#1d4ed8;
+}
+``*
