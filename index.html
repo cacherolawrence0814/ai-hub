@@ -1,18 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AI Hub</title>
-</head>
-<body>
-    <h1>Welcome to AI Hub</h1>
-    <p>Find the best AI tools here.</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Hub</title>
 
-    <h2>Popular AI Tools</h2>
-    <ul>
-        <li><a href="https://chatgpt.com"></li>
-        <li><ttps://claude.aiClaude</a></li>
-        <li><ttps://gemini.google.comGemini</a></li>
-        <li><ttps://copilot.microsoft.comMicrosoft Copilot</a></li>
-    </ul>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#111827;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.search{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+.tools{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1f2937;
+    border-radius:15px;
+    padding:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+.card a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 AI Hub</h1>
+    <p>Find the best AI tools in one place</p>
+</header>
+
+<div class="container">
+
+    <input class="search" placeholder="Search AI tools...">
+
+    <div class="tools">
+
+        <div class="card">
+            <h3>ChatGPT</h3>
+            <p>General AI assistant for writing, coding, and research.</p>
+            <a href="https://omVisit Tool</a>
+        </div>
+
+        <div class="card">
+            <h3>Microsoft Copilot</h3>
+            <p>AI assistant integrated with Microsoft services.</p>
+            https://copilot.microsoft.comVisit Tool</a>
+        </div>
+
+        <div class="card">
+            <h3>Claude</h3>
+            <p>Excellent for document analysis and reasoning.</p>
+            <atps://claude.aiVisit Tool</a>
+        </div>
+
+        <div class="card">
+            <h3>Gemini</h3>
+            <p>Google's AI assistant.</p>
+            <a href="https://gemini.google Tool</a>
+        </div>
+
+        <div class="card">
+            <h3>Cursor</h3>
+            <p>AI-powered code editor for developers.</p>
+            <a href/cursor.comVisit Tool</a>
+        </div>
+
+        <div class="card">
+            <h3>GitHub Copilot</h3>
+            <p>Pair programmer powered by AI.</p>
+            <atps://github.com/features/copilotVisit Tool</a>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
