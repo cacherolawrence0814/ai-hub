@@ -54,3 +54,24 @@ header {
 .btn:hover {
     background: #1d4ed8;
 }
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-btn {
+    background: #374151;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-btn:hover {
+    background: #2563eb;
+}
