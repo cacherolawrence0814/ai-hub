@@ -75,3 +75,7 @@ header {
 .category-btn:hover {
     background: #2563eb;
 }
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
