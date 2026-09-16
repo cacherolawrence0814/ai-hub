@@ -1,6 +1,26 @@
 console.log("AI Hub Loaded Successfully");
+
 const searchInput = document.getElementById('searchInput');
 
+function updateResultsCounter() {
+
+    const cards = document.querySelectorAll('.card');
+
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+
+        if (card.style.display !== 'none') {
+            visibleCount++;
+        }
+
+    });
+
+    document.getElementById('resultsCounter').textContent =
+        `Showing ${visibleCount} tools`;
+}
+
+// Search Function
 searchInput.addEventListener('keyup', function () {
 
     const searchTerm = searchInput.value.toLowerCase();
@@ -19,31 +39,39 @@ searchInput.addEventListener('keyup', function () {
 
     });
 
+    updateResultsCounter();
+
 });
 
-const categoryButtons = document.querySelectorAll(".category-btn");
+// Category Filter
+const categoryButtons = document.querySelectorAll('.category-btn');
 
 categoryButtons.forEach(button => {
 
-    button.addEventListener("click", () => {
+    button.addEventListener('click', () => {
 
         const filter = button.dataset.filter;
 
-        const cards = document.querySelectorAll(".card");
+        const cards = document.querySelectorAll('.card');
 
         cards.forEach(card => {
 
             if (
-                filter === "all" ||
+                filter === 'all' ||
                 card.dataset.category === filter
             ) {
-                card.style.display = "block";
+                card.style.display = 'block';
             } else {
-                card.style.display = "none";
+                card.style.display = 'none';
             }
 
         });
 
+        updateResultsCounter();
+
     });
 
 });
+
+// Initial Count
+updateResultsCounter();

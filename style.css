@@ -79,3 +79,7 @@ header {
     transform: translateY(-5px);
     transition: 0.3s;
 }
+
+.category-btn.active {
+    background: #2563eb;
+}
